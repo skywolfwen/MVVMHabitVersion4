@@ -37,7 +37,7 @@ public class MaterialDialogUtils {
                 .titleGravity(GravityEnum.CENTER)
                 .titleColorRes(R.color.white)
                 .contentColorRes(android.R.color.white)
-                .backgroundColorRes(R.color.material_blue_grey_800)
+                .backgroundColorRes(androidx.appcompat.R.color.material_blue_grey_800)
                 .dividerColorRes(R.color.white)
                 .btnSelector(R.drawable.md_selector, DialogAction.POSITIVE)
                 .positiveColor(Color.WHITE)
@@ -294,7 +294,7 @@ public class MaterialDialogUtils {
                     }
                 })
                 .alwaysCallMultiChoiceCallback()
-                .positiveText(R.string.md_choose_label)
+                .positiveText("Choose")
                 .autoDismiss(false)
                 .neutralText("clear")
                 .itemsDisabledIndices(0, 1);

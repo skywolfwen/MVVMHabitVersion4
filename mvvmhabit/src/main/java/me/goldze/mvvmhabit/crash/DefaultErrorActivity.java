@@ -33,6 +33,7 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
+
 import me.goldze.mvvmhabit.R;
 
 
@@ -45,9 +46,9 @@ public final class DefaultErrorActivity extends AppCompatActivity {
 
         //This is needed to avoid a crash if the developer has not specified
         //an app-level theme that extends Theme.AppCompat
-        TypedArray a = obtainStyledAttributes(R.styleable.AppCompatTheme);
-        if (!a.hasValue(R.styleable.AppCompatTheme_windowActionBar)) {
-            setTheme(R.style.Theme_AppCompat_Light_DarkActionBar);
+        TypedArray a = obtainStyledAttributes(androidx.appcompat.R.styleable.AppCompatTheme);
+        if (!a.hasValue(androidx.appcompat.R.styleable.AppCompatTheme_windowActionBar)) {
+            setTheme(androidx.appcompat.R.style.Theme_AppCompat_Light_DarkActionBar);
         }
         a.recycle();
 

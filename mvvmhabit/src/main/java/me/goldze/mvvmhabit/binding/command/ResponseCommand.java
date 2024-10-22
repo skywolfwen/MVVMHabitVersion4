@@ -1,6 +1,6 @@
 package me.goldze.mvvmhabit.binding.command;
 
-import io.reactivex.functions.Function;
+import io.reactivex.rxjava3.functions.Function;
 
 /**
  * About : kelin的ResponseCommand
@@ -54,7 +54,7 @@ public class ResponseCommand<T, R> {
     }
 
 
-    public R execute(T parameter) throws Exception {
+    public R execute(T parameter) throws Throwable {
         if (function != null && canExecute()) {
             return function.apply(parameter);
         }

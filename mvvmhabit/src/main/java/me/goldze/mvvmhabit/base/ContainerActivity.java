@@ -4,13 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 
-import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
-
 import java.lang.ref.WeakReference;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+
+import com.trello.rxlifecycle4.components.support.RxAppCompatActivity;
+
 import me.goldze.mvvmhabit.R;
 
 

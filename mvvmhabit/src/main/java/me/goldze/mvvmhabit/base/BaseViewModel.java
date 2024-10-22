@@ -3,8 +3,6 @@ package me.goldze.mvvmhabit.base;
 import android.app.Application;
 import android.os.Bundle;
 
-import com.trello.rxlifecycle2.LifecycleProvider;
-
 import java.lang.ref.WeakReference;
 import java.util.HashMap;
 import java.util.Map;
@@ -14,9 +12,12 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.Observer;
-import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.functions.Consumer;
+
+import com.trello.rxlifecycle4.LifecycleProvider;
+
+import io.reactivex.rxjava3.disposables.CompositeDisposable;
+import io.reactivex.rxjava3.disposables.Disposable;
+import io.reactivex.rxjava3.functions.Consumer;
 import me.goldze.mvvmhabit.bus.event.SingleLiveEvent;
 
 /**

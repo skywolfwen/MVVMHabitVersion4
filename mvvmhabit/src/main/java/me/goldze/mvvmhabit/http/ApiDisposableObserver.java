@@ -1,6 +1,6 @@
 package me.goldze.mvvmhabit.http;
 
-import io.reactivex.observers.DisposableObserver;
+import io.reactivex.rxjava3.observers.DisposableObserver;
 import me.goldze.mvvmhabit.base.AppManager;
 import me.goldze.mvvmhabit.utils.KLog;
 import me.goldze.mvvmhabit.utils.ToastUtils;

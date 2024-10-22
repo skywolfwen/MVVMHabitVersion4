@@ -16,12 +16,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import androidx.annotation.NonNull;
-import io.reactivex.Observable;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.functions.Consumer;
-import io.reactivex.functions.Function;
-import io.reactivex.functions.Predicate;
-import io.reactivex.schedulers.Schedulers;
+
+import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.core.ObservableSource;
+import io.reactivex.rxjava3.functions.Consumer;
+import io.reactivex.rxjava3.functions.Function;
+import io.reactivex.rxjava3.functions.Predicate;
+import io.reactivex.rxjava3.schedulers.Schedulers;
 
 
 public class Luban {
@@ -116,7 +118,7 @@ public class Luban {
                             if (compressListener != null) compressListener.onError(throwable);
                         }
                     })
-                    .onErrorResumeNext(Observable.<File>empty())
+                    .onErrorResumeNext((Function<Throwable, ObservableSource<? extends File>>) Observable.<File>empty())
                     .filter(new Predicate<File>() {
                         @Override
                         public boolean test(File file) throws Exception {
@@ -146,7 +148,7 @@ public class Luban {
                             if (compressListener != null) compressListener.onError(throwable);
                         }
                     })
-                    .onErrorResumeNext(Observable.<File>empty())
+                    .onErrorResumeNext((Function<Throwable, ObservableSource<? extends File>>) Observable.<File>empty())
                     .filter(new Predicate<File>() {
                         @Override
                         public boolean test(File file) throws Exception {

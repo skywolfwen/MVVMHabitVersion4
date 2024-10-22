@@ -1,18 +1,27 @@
-apply plugin: 'com.android.library'
+plugins {
+    id 'com.android.library'
+}
+
 android {
-    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    namespace 'me.goldze.mvvmhabit'
+    compileSdk rootProject.ext.android.compileSdkVersion
+
     defaultConfig {
-        minSdkVersion rootProject.ext.android.minSdkVersion
-        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        minSdk rootProject.ext.android.minSdkVersion
+        targetSdk rootProject.ext.android.targetSdkVersion
     }
-    dataBinding {
-        enabled true
+    buildFeatures {
+        dataBinding true
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 }
 

@@ -1,6 +1,6 @@
 package me.goldze.mvvmhabit.http.download;
 
-import io.reactivex.observers.DisposableObserver;
+import io.reactivex.rxjava3.observers.DisposableObserver;
 
 /**
  * Created by goldze on 2017/5/11.

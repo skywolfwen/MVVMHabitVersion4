@@ -1,1 +1,22 @@
-include ':app', ':mvvmhabit'
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        jcenter()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        jcenter()
+    }
+}
+
+include ':app'
+include ':mvvmhabit'
+include ':twinkling_refresh_layout'
+include ':pager-bottom-tab-strip'

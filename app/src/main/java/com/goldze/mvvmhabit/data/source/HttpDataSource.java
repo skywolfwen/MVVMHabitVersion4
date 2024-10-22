@@ -2,7 +2,7 @@ package com.goldze.mvvmhabit.data.source;
 
 import com.goldze.mvvmhabit.entity.DemoEntity;
 
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 import me.goldze.mvvmhabit.http.BaseResponse;
 
 /**

@@ -6,7 +6,8 @@ import com.goldze.mvvmhabit.entity.DemoEntity;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
-import io.reactivex.Observable;
+
+import io.reactivex.rxjava3.core.Observable;
 import me.goldze.mvvmhabit.base.BaseModel;
 import me.goldze.mvvmhabit.http.BaseResponse;
 

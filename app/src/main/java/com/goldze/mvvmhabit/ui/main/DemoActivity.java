@@ -8,11 +8,12 @@ import android.os.Bundle;
 import com.goldze.mvvmhabit.BR;
 import com.goldze.mvvmhabit.R;
 import com.goldze.mvvmhabit.databinding.ActivityDemoBinding;
-import com.tbruyelle.rxpermissions2.RxPermissions;
+import com.tbruyelle.rxpermissions3.RxPermissions;
 
 import androidx.annotation.Nullable;
 import androidx.lifecycle.Observer;
-import io.reactivex.functions.Consumer;
+
+import io.reactivex.rxjava3.functions.Consumer;
 import me.goldze.mvvmhabit.base.BaseActivity;
 import me.goldze.mvvmhabit.http.DownLoadManager;
 import me.goldze.mvvmhabit.http.download.ProgressCallBack;

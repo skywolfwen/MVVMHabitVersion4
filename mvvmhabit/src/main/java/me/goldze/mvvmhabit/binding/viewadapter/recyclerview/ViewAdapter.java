@@ -5,8 +5,9 @@ import java.util.concurrent.TimeUnit;
 import androidx.databinding.BindingAdapter;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import io.reactivex.functions.Consumer;
-import io.reactivex.subjects.PublishSubject;
+
+import io.reactivex.rxjava3.functions.Consumer;
+import io.reactivex.rxjava3.subjects.PublishSubject;
 import me.goldze.mvvmhabit.binding.command.BindingCommand;
 
 /**

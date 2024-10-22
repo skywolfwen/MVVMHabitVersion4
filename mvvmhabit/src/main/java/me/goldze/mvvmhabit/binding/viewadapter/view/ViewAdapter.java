@@ -2,12 +2,13 @@ package me.goldze.mvvmhabit.binding.viewadapter.view;
 
 import android.view.View;
 
-import com.jakewharton.rxbinding2.view.RxView;
-
 import java.util.concurrent.TimeUnit;
 
 import androidx.databinding.BindingAdapter;
-import io.reactivex.functions.Consumer;
+
+import com.jakewharton.rxbinding4.view.RxView;
+
+import io.reactivex.rxjava3.functions.Consumer;
 import me.goldze.mvvmhabit.binding.command.BindingCommand;
 
 /**
