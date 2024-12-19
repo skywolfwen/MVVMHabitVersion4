@@ -61,6 +61,7 @@ dependencies {
     //network
     api rootProject.ext.dependencies.okhttp
     api rootProject.ext.dependencies.retrofit
+    api rootProject.ext.dependencies["converter-scalars"]
     api rootProject.ext.dependencies["converter-gson"]
     api rootProject.ext.dependencies["adapter-rxjava"]
     //json解析

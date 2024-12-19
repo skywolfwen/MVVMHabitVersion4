@@ -27,7 +27,7 @@ ext {
     //依赖第三方配置
     dependencies = [
             //rxjava
-            "rxjava"                               : "io.reactivex.rxjava3:rxjava:3.1.9",
+            "rxjava"                               : "io.reactivex.rxjava3:rxjava:3.1.10",
             "rxandroid"                            : "io.reactivex.rxjava3:rxandroid:3.0.2",
             //rx系列与View生命周期同步
             "rxlifecycle"                          : "com.trello.rxlifecycle4:rxlifecycle:4.0.2",
@@ -37,15 +37,16 @@ ext {
             //rx 6.0权限请求
             "rxpermissions"                        : "com.github.tbruyelle:rxpermissions:0.12",
             //network
-            "okhttp"                               : "com.squareup.okhttp3:okhttp:3.10.0",
+            "okhttp"                               : "com.squareup.okhttp3:okhttp:4.12.0",
             "retrofit"                             : "com.squareup.retrofit2:retrofit:2.11.0",
+            "converter-scalars"                    : "com.squareup.retrofit2:converter-scalars:2.11.0",
             "converter-gson"                       : "com.squareup.retrofit2:converter-gson:2.11.0",
             "adapter-rxjava"                       : "com.squareup.retrofit2:adapter-rxjava3:2.11.0",
             //glide图片加载
-            "glide"                                : "com.github.bumptech.glide:glide:4.11.0",
-            "glide-compiler"                       : "com.github.bumptech.glide:compiler:4.11.0",
+            "glide"                                : "com.github.bumptech.glide:glide:4.16.0",
+            "glide-compiler"                       : "com.github.bumptech.glide:compiler:4.16.0",
             //json解析
-            "gson"                                 : "com.google.code.gson:gson:2.8.6",
+            "gson"                                 : "com.google.code.gson:gson:2.11.0",
             //material-dialogs
             "material-dialogs-core"                : "com.afollestad.material-dialogs:core:0.9.6.0",
             "material-dialogs-commons"             : "com.afollestad.material-dialogs:commons:0.9.6.0",
