@@ -35,18 +35,18 @@ ext {
             //rxbinding
             "rxbinding"                            : "com.jakewharton.rxbinding4:rxbinding:4.0.0",
             //rx 6.0权限请求
-            "rxpermissions"                        : "com.github.tbruyelle:rxpermissions:0.12",
+            "rxpermissions"                        : "com.github.tbruyelle:RxPermissions:0.12",
             //network
-            "okhttp"                               : "com.squareup.okhttp3:okhttp:4.12.0",
-            "retrofit"                             : "com.squareup.retrofit2:retrofit:2.11.0",
-            "converter-scalars"                    : "com.squareup.retrofit2:converter-scalars:2.11.0",
-            "converter-gson"                       : "com.squareup.retrofit2:converter-gson:2.11.0",
-            "adapter-rxjava"                       : "com.squareup.retrofit2:adapter-rxjava3:2.11.0",
+            "okhttp"                               : "com.squareup.okhttp3:okhttp:5.0.0",
+            "retrofit"                             : "com.squareup.retrofit2:retrofit:3.0.0",
+            "converter-scalars"                    : "com.squareup.retrofit2:converter-scalars:3.0.0",
+            "converter-gson"                       : "com.squareup.retrofit2:converter-gson:3.0.0",
+            "adapter-rxjava"                       : "com.squareup.retrofit2:adapter-rxjava3:3.0.0",
             //glide图片加载
             "glide"                                : "com.github.bumptech.glide:glide:4.16.0",
             "glide-compiler"                       : "com.github.bumptech.glide:compiler:4.16.0",
             //json解析
-            "gson"                                 : "com.google.code.gson:gson:2.11.0",
+            "gson"                                 : "com.google.code.gson:gson:2.13.1",
             //material-dialogs
             "material-dialogs-core"                : "com.afollestad.material-dialogs:core:0.9.6.0",
             "material-dialogs-commons"             : "com.afollestad.material-dialogs:commons:0.9.6.0",
@@ -55,8 +55,11 @@ ext {
             "bindingcollectionadapter-recyclerview": "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-recyclerview:4.0.0",
             "bindingcollectionadapter-viewpager2"  : "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-viewpager2:4.0.0",
             //Google AAC
-            "lifecycle-extensions"                 : "androidx.lifecycle:lifecycle-extensions:2.0.0",
-            "lifecycle-compiler"                   : "androidx.lifecycle:lifecycle-compiler:2.0.0",
+            "lifecycle-viewmodel"                  : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.1",
+            "lifecycle-viewmodel-savedstate"       : "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.9.1",
+            "lifecycle-livedata"                   : "androidx.lifecycle:lifecycle-livedata-ktx:2.9.1",
+            "lifecycle-process"                    : "androidx.lifecycle:lifecycle-process:2.9.1",
+            "lifecycle-compiler"                   : "androidx.lifecycle:lifecycle-compiler:2.9.1",
             //MVVMHabit
             "MVVMHabit"                            : "com.github.goldze:MVVMHabit:4.0.0",
     ]
