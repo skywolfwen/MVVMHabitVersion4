@@ -15,7 +15,8 @@ import com.goldze.mvvmhabit.databinding.FragmentNetworkBinding;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
+
 import me.goldze.mvvmhabit.base.BaseFragment;
 import me.goldze.mvvmhabit.utils.MaterialDialogUtils;
 import me.goldze.mvvmhabit.utils.ToastUtils;
@@ -47,7 +48,7 @@ public class NetWorkFragment extends BaseFragment<FragmentNetworkBinding, NetWor
     public NetWorkViewModel initViewModel() {
         //使用自定义的ViewModelFactory来创建ViewModel，如果不重写该方法，则默认会调用NetWorkViewModel(@NonNull Application application)构造方法
         AppViewModelFactory factory = AppViewModelFactory.getInstance(getActivity().getApplication());
-        return ViewModelProviders.of(this, factory).get(NetWorkViewModel.class);
+        return new ViewModelProvider(this, factory).get(NetWorkViewModel.class);
     }
 
     @Override
