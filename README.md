@@ -89,7 +89,7 @@ allprojects {
 dependencies {
     ...
     // implementation 'com.github.goldze:MVVMHabit:4.0.0'
-    implementation 'com.github.skywolfwen:MVVMHabitVersion4:4.0.2'
+    implementation 'com.github.skywolfwen:MVVMHabitVersion4:4.0.3'
 }
 ```
 或
